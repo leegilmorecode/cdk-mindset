@@ -1,0 +1,39 @@
+{
+  "info": {
+    "_postman_id": "78ca0e00-7475-4af9-9206-d4302bceeed4",
+    "name": "cdk-mindset",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "752706"
+  },
+  "item": [
+    {
+      "name": "create order",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"customerId\": \"cust-33333\",\n  \"items\": [\n    {\n      \"productId\": \"prod-001\",\n      \"quantity\": 2,\n      \"price\": 19.99\n    },\n    {\n      \"productId\": \"prod-002\",\n      \"quantity\": 1,\n      \"price\": 49.99\n    }\n  ],\n  \"total\": 89.97\n}\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://your-rest-id.execute-api.eu-west-1.amazonaws.com/api/v1/orders",
+          "protocol": "https",
+          "host": [
+            "uh4lvti812",
+            "execute-api",
+            "eu-west-1",
+            "amazonaws",
+            "com"
+          ],
+          "path": ["api", "v1", "orders"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
